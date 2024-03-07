@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Africa Explorer Tours</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img_bc.avif');
+            font-family: 'Arial', sans-serif;
+            backdrop-filter: blur(5.001px);
+            color: #333;
+        }
+
+        header {
+            padding: 15px 0;
+            text-align: center;
+            color: #1809e0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1809e0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        button {
+            background-color: #e8ebec;
+            color: rgb(10, 10, 10);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #59c9e6;
+            color: white;
+            padding: 10px 0;
+            margin-bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Africa Explorer Tours</h1>
+        <nav>
+            <ul>
+                <div class="nav">
+                    <li><a href="index.html"><button type="button">Home</button></a></li>
+                    <li><a href="about.html"><button type="button">About Us</button></a></li>
+                    <li><a href="contact.html"><button type="button">Contact Us</button></a></li>
+                    <li><a href="pricing.html"><button type="button">Pricing</button></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Africa Explorer Tours - Your Gateway to African Adventures</p>
+    </footer>
+</body>
+
+</html>
