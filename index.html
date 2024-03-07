@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 5 Project</title>
+    <title>Africa Explorer Tours</title>
     <style>
         body {
             background-image: url('img_bc.avif');
@@ -12,9 +12,9 @@
             background-position: center;
             background-repeat: no-repeat;
             color: #ffffff;
-            margin: 0; 
-            font-family: 'Arial', sans-serif; 
-            filter: blur(.5px); 
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            filter: blur(.002px);
         }
 
         header {
@@ -30,26 +30,46 @@
             border: 1px solid #ccc;
             padding: 20px;
             margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.8); 
-            max-width: 800px; 
-            border-radius: 10px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            background-color: rgba(191, 225, 230, 0.8);
+            max-width: 800px;
+            color: #1809e0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .container p {
             text-align: justify;
-            line-height: 1.5; 
+            line-height: 1.5;
         }
 
         .image-container {
             text-align: center;
             margin-top: 20px;
+            overflow: hidden;
         }
 
-        img {
+        .image-container img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px; 
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .destination-section {
+            margin-top: 20px;
+        }
+
+        .destination {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .destination h3 {
+            font-size: 1.5em;
         }
 
         .skills-container {
@@ -58,7 +78,7 @@
         }
 
         ul {
-            list-style-type: none; 
+            list-style-type: none;
             padding: 0;
         }
 
@@ -70,33 +90,99 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #333; 
+            background-color: #333;
         }
 
         footer p {
             margin: 0;
             color: #fff;
         }
+
+        .destination {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .destination h3 {
+            font-size: 1.5em;
+        }
+
+        .destination p {
+            text-align: justify;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Web Development Experts</h1>
+        <h1>Africa Explorer Tours</h1>
     </header>
 
     <div class="container">
         <section>
-            <h2>About Us</h2>
+            <h2>Welcome to Your African Adventure</h2>
             <p>
-                Welcome to JanjaProgrammers, your go-to destination for expert web development services. We are passionate about turning ideas into digital experiences and creating websites that leave a lasting impression.
+                Africa Explorer Tours invites you to embark on a journey of a lifetime. Immerse yourself in the rich
+                cultural tapestry, breathtaking landscapes, and diverse wildlife that Africa has to offer.
+                Our carefully curated travel packages ensure an unforgettable experience in every destination.
             </p>
         </section>
 
-        <section>
-            <h2>Our Work</h2>
-            <div class="image-container">
-                <img src="your-image-url.jpg" alt="Our Work">
+        <section class="destination-section">
+            <div class="destination">
+                <h3>Discover the Serengeti, Tanzania</h3>
+                <div class="image-container">
+                    <img src="sere_img.jfif" alt="Serengeti, Tanzania">
+                </div>
+                <p>Experience the wonder of the Serengeti, home to the Great Migration and incredible wildlife.</p>
+            </div>
+
+            <div class="destination">
+                <h3>Explore the Victoria Falls, Zambia</h3>
+                <div class="image-container">
+                    <img src="victoria_img.jfif" alt="Victoria Falls, Zambia">
+                </div>
+                <p>Feel the power of the majestic Victoria Falls, one of the Seven Natural Wonders of the World.</p>
+            </div>
+            <div class="destination">
+                <h3>Marvel at the Pyramids of Giza, Egypt</h3>
+                <div class="image-container">
+                    <img src="pyra_img.webp" alt="Pyramids of Giza, Egypt">
+                </div>
+                <p>Step back in time and explore the iconic Pyramids of Giza, a testament to ancient Egyptian civilization.</p>
+            </div>
+
+            <div class="destination">
+                <h3>Roam the Maasai Mara, Kenya</h3>
+                <div class="image-container">
+                    <img src="masai_img.webp" alt="Maasai Mara, Kenya">
+                </div>
+                <p>Embark on a safari adventure in the Maasai Mara, known for its vast savannah and diverse wildlife.</p>
+            </div>
+
+            <div class="destination">
+                <h3>Relax on the Seychelles Islands</h3>
+                <div class="image-container">
+                    <img src="sey_img.jfif" alt="Seychelles Islands">
+                </div>
+                <p>Escape to the Seychelles Islands and unwind on pristine beaches surrounded by crystal-clear turquoise waters.</p>
+            </div>
+
+            <div class="destination">
+                <h3>Discover the Table Mountain, South Africa</h3>
+                <div class="image-container">
+                    <img src="table_img.jpg" alt="Table Mountain, South Africa">
+                </div>
+                <p>Ascend the iconic Table Mountain for panoramic views of Cape Town and the surrounding landscapes.</p>
+            </div>
+
+            <div class="destination">
+                <h3>Explore the Sahara Desert, Morocco</h3>
+                <div class="image-container">
+                    <img src="sahara_img.jfif" alt="Sahara Desert, Morocco">
+                </div>
+                <p>Journey through the vast and mystical Sahara Desert, where golden dunes stretch as far as the eye can see.</p>
             </div>
         </section>
 
@@ -104,18 +190,18 @@
             <h2>Explore Our Skills</h2>
             <div class="skills-container">
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>C</li>
+                    <li>Expertly Crafted Tours</li>
+                    <li>Cultural Immersion</li>
+                    <li>Breathtaking Landscapes</li>
+                    <li>Wildlife Encounters</li>
+                    <li>Memorable Experiences</li>
                 </ul>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 JanjaProgrammers - Web Development Excellence</p>
+        <p>&copy; 2024 Africa Explorer Tours - Your Gateway to African Adventures</p>
     </footer>
 </body>
 
